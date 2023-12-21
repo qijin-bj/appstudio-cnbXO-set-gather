@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-tw2w
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/push-pyxis-qcmd-tenant/appstudio/devfile-sample-python-basic-tw2w@sha256:96bc41f1d250e1ac0efd1791a4e60ed048021e6e641a398e83a309008c273f5f
+        name: my-python
+        resources: {}
+status: {}
